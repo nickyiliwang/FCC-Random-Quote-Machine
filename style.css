@@ -1,0 +1,48 @@
+body {
+    font-family: 'Sevillana', cursive;
+}
+
+body {
+    background-color: lightblue;
+}
+
+#button {
+    outline: none;
+}
+
+#quote-box {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#veigarThumb {
+    margin: 5px;
+    max-height: 50px;
+    width: auto;
+    border-radius: 10px;
+}
+
+#author {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#new-quote {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+#tweet-quote {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.fab {
+    margin-right: 7px;
+}
