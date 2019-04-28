@@ -15,49 +15,38 @@
 
 <body>
 
-    <div class="container" id="quote-box">
-        <div class="row">
-
-            <!-- Audio -->
-            <audio id="veigar-audio">
-                <source
-                    src="https://vignette.wikia.nocookie.net/leagueoflegends/images/a/a9/Veigar.attack1.ogg/revision/latest?cb=20121127014702"
-                    type="audio/ogg">
-            </audio>
-            <!-- Audio Button -->
-            <button onclick="playAudio()" class="btn btn-link" type="button">
-                <!-- Quote -->
-                <h1 class="col-lg-12" id="text">"I will swallow your soul."</h1>
-            </button>
-
-            <!-- Author and Thumbnail -->
-            <h2 class="col-lg-12" id="author">~ Veigar<img id="veigarThumb"
-                    src="https://pbs.twimg.com/profile_images/2871036152/e3a87735bcf60f33479a3ffb2d9ace86_400x400.jpeg"
-                    alt="veigarThumb"></h2>
-
-                <div class="col-lg-12" id="new-quote">
-                        <button class="btn btn-dark">new-quote</button>
-                </div>
-                <div class="col-lg-12" id="tweet-quote">
-                        <button class="btn btn-dark"><i class="fab fa-twitter"></i>tweet-quote</button>
-                </div>
-        
-
-        </div>
-    </div>
+    <blockquote id="quote-box">
+        <!-- Audio -->
+        <audio id="veigar-audio">
+            <source
+                src="https://vignette.wikia.nocookie.net/leagueoflegends/images/a/a9/Veigar.attack1.ogg/revision/latest?cb=20121127014702"
+                type="audio/ogg">
+        </audio>
+        <!-- Audio Button -->
+        <button onclick="playAudio()" class="btn btn-link" type="button">
+            <!-- Quote text-->
+            <p class="quotation" id="text">"I will swallow your soul."</p>
+        </button>
+        <!-- Author and Thumbnail -->
+        <footer id="author">~ Veigar<img id="veigarThumb"
+                src="https://pbs.twimg.com/profile_images/2871036152/e3a87735bcf60f33479a3ffb2d9ace86_400x400.jpeg"
+                alt="veigarThumb"></footer>
+        <!-- New Quote Button -->
+        <button class="btn btn-dark" id="new-quote">new-quote</button>
+        <!-- New Tweet Button -->
+        <button id="tweet-quote"><a href="twitter.com/intent/tweet" id="tweet-quote" class="twitter-share-button"
+            data-show-count="false">tweet</a></button>
+        </blockquote> 
 
 
 
 
 
-
-
-
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src=" https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
-
 </html>

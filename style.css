@@ -1,20 +1,37 @@
 body {
     font-family: 'Sevillana', cursive;
-}
-
-body {
     background-color: lightblue;
 }
 
-#button {
-    outline: none;
-}
-
-#quote-box {
+/* #quote-box {
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+} */
+
+
+
+/* #author {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+} */
+
+
+
+/* #text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+#new-quote,
+#new-tweet {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
 }
 
 #veigarThumb {
@@ -24,25 +41,36 @@ body {
     border-radius: 10px;
 }
 
-#author {
-    display: flex;
-    justify-content: flex-end;
-}
-
-#new-quote {
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px;
-}
-
-#tweet-quote {
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 10px;
-}
-
-.fab {
-    margin-right: 7px;
-}
+blockquote{
+    font-size: 30px;
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: .5em 10px;
+    padding: 0 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+    padding: 10px 20px;
+    line-height: 1.4;
+  }
+  
+  blockquote:before {
+    content: open-quote;
+    display: inline;
+    height: 0;
+    line-height: 0;
+    left: -10px;
+    position: relative;
+    top: 30px;
+    color: #ccc;
+    font-size: 3em;
+  }
+  
+  p{
+    margin: 0;
+  }
+  
+  footer{
+    margin:0;
+    text-align: right;
+    font-size: 1em;
+    font-style: italic;
+  }
