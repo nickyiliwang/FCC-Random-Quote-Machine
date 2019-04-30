@@ -1,52 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Sevillana" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
     <title>Veigar Quotes</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <blockquote id="quote-box">
-        <!-- Audio -->
-        <audio id="veigar-audio">
-            <source
-                src="https://vignette.wikia.nocookie.net/leagueoflegends/images/a/a9/Veigar.attack1.ogg/revision/latest?cb=20121127014702"
-                type="audio/ogg">
-        </audio>
-        <!-- Audio Button -->
-        <button onclick="playAudio()" class="btn btn-link" type="button">
-            <!-- Quote text-->
-            <p class="quotation" id="text">"I will swallow your soul."</p>
-        </button>
-        <!-- Author and Thumbnail -->
-        <footer id="author">~ Veigar<img id="veigarThumb"
-                src="https://pbs.twimg.com/profile_images/2871036152/e3a87735bcf60f33479a3ffb2d9ace86_400x400.jpeg"
-                alt="veigarThumb"></footer>
-        <!-- New Quote Button -->
-        <button class="btn btn-dark" id="new-quote">new-quote</button>
-        <!-- New Tweet Button -->
-        <button id="tweet-quote"><a href="twitter.com/intent/tweet" id="tweet-quote" class="twitter-share-button"
-            data-show-count="false">tweet</a></button>
-        </blockquote> 
+      <!-- Audio Button -->
+      <button class="btn btn-link" type="button" id="audio-btn">
+        <!-- Quote text-->
+        <p class="quotation" id="text"></p>
+      </button>
+      <!-- Author and Thumbnail -->
+      <span id="author">
+        ~ Veigar<img
+          id="veigarThumb"
+          src="https://pbs.twimg.com/profile_images/2871036152/e3a87735bcf60f33479a3ffb2d9ace86_400x400.jpeg"
+          alt="veigarThumb"
+        />
+      </span>
+      <!-- New Quote Button -->
+      <button class="btn btn-dark" id="new-quote">new-quote</button>
+      <!-- New Tweet Button -->
+      <a
+        href="twitter.com/intent/tweet"
+        id="tweet-quote"
+        class="twitter-share-button"
+        data-show-count="false"
+        >tweet</a
+      >
+    </blockquote>
 
-
-
-
-
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <script src="script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src=" https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-</body>
+    <script
+      async
+      src="https://platform.twitter.com/widgets.js"
+      charset="utf-8"
+    ></script>
+  </body>
 </html>

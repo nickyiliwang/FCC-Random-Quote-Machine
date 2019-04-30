@@ -1,76 +1,63 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+
 body {
-    font-family: 'Sevillana', cursive;
-    background-color: lightblue;
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  place-items: center center;
+  background-color: lightblue;
 }
 
-/* #quote-box {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
-
-
-/* #author {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
-} */
-
-
-
-/* #text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
-#new-quote,
-#new-tweet {
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px;
+#new-quote {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
 }
 
 #veigarThumb {
-    margin: 5px;
-    max-height: 50px;
-    width: auto;
-    border-radius: 10px;
+  margin: 5px;
+  max-height: 50px;
+  width: auto;
+  border-radius: 10px;
+}
+
+#text{
+  font-size: 2em;
+  color: rgb(95, 5, 95);
 }
 
 blockquote{
-    font-size: 30px;
-    background: #f9f9f9;
-    border-left: 10px solid #ccc;
-    margin: .5em 10px;
-    padding: 0 10px;
-    quotes: "\201C""\201D""\2018""\2019";
-    padding: 10px 20px;
-    line-height: 1.4;
-  }
-  
-  blockquote:before {
-    content: open-quote;
-    display: inline;
-    height: 0;
-    line-height: 0;
-    left: -10px;
-    position: relative;
-    top: 30px;
-    color: #ccc;
-    font-size: 3em;
-  }
-  
-  p{
-    margin: 0;
-  }
-  
-  footer{
-    margin:0;
-    text-align: right;
-    font-size: 1em;
-    font-style: italic;
-  }
+  font-size: 1.4em;
+  width:60%;
+  margin:50px auto;
+  font-family:Open Sans;
+  font-style:italic;
+  color: #555555;
+  padding:1.2em 30px 1.2em 75px;
+  border-left:8px solid #78C0A8 ;
+  line-height:1.6;
+  position: relative;
+  background:#EDEDED;
+}
+
+blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color:#78C0A8;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+blockquote::after{
+  content: '';
+}
+
+blockquote span{
+  display: block;
+  text-align: right;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:0.1em;
+}
