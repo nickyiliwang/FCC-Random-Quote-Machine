@@ -1,5 +1,3 @@
-var newNumber = 0;
-
 var quotesObj = {
   // Quote, name, icon, voice, laugh
   0: [
@@ -52,10 +50,10 @@ var quotesObj = {
     "https://vignette.wikia.nocookie.net/leagueoflegends/images/2/28/Jax.laugh2.ogg/revision/latest?cb=20140101195119"
   ],
   7: [
-    "I've heard a lot about this hero with a hammer, can't wait to meet him.",
+    "Keep swinging til' you hit something.",
     "Poppy",
     "https://pbs.twimg.com/media/DZj7m63VQAAcxZq.jpg",
-    "https://vignette.wikia.nocookie.net/leagueoflegends/images/3/39/Poppy.start02.ogg/revision/latest?cb=20151125180806",
+    "https://vignette.wikia.nocookie.net/leagueoflegends/images/8/8b/Poppy.attack12.ogg/revision/latest?cb=20151125180310",
     "https://vignette.wikia.nocookie.net/leagueoflegends/images/c/cf/Poppy.laugh02.ogg/revision/latest?cb=20151125180555"
   ],
   8: [
@@ -80,40 +78,39 @@ var quotesObj = {
     "https://vignette.wikia.nocookie.net/leagueoflegends/images/8/89/Chronokeeper.laugh2.ogg/revision/latest?cb=20130729072653"
   ]
 };
+var audio;
+var laugh;
+var newNumber = 0;
 
-onStart();
+onReady();
+onclick();
 
-function onStart() {
-  onclick();
-  quote();
-  audio();
-  author();
-  icon();
+function onReady() {
+  $("#document").ready(function() {
+    newNumber = getRandomInt(10);
+    $("#text").text(quotesObj[newNumber][0]);
+    $("#author").text(quotesObj[newNumber][1]);
+    $("#champ-Icon").attr("src", quotesObj[newNumber][2]);
+  });
 }
 
 function onclick() {
   $("#new-quote").on("click", function() {
     newNumber = getRandomInt(10);
+    $("#text").text(quotesObj[newNumber][0]);
+    $("#author").text(quotesObj[newNumber][1]);
+    $("#champ-Icon").attr("src", quotesObj[newNumber][2]);
+    audio = new Audio(quotesObj[newNumber][3]);
+    laugh = new Audio(quotesObj[newNumber][4]);
+    $("#audio-btn").click(e => audio.play());
+    $(audio).on("ended", e => laugh.play());
   });
 }
 
-function quote() {
-  $("#text").text(quotesObj[newNumber][0]);
-}
-
-function author() {
-  $("#author").text(quotesObj[newNumber][1]);
-}
-
-function icon() {
-  $("#champ-Icon").attr("src", quotesObj[newNumber][2]);
-}
-
 function audio() {
-  var audio = new Audio(quotesObj[newNumber][3]);
-  var laugh = new Audio(quotesObj[newNumber][4]);
-  $("#audio-btn").click(e => audio.play());
-  $(audio).on("ended", e => laugh.play());
+  $("#audio-btn").click(function() {
+    audio.play();
+  });
 }
 
 function getRandomInt(max) {

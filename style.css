@@ -5,7 +5,7 @@ body {
   height: 100vh;
   margin: 0;
   place-items: center center;
-  background-color: lightblue;
+  background-image: url("http://cdn.leagueoflegends.com/lolkit/1.1.6/resources/images/bg-default.jpg");
 }
 
 #new-quote {
@@ -14,50 +14,55 @@ body {
   padding: 10px;
 }
 
-#veigarThumb {
+.fa-twitter {
+  margin-top: 20px;
+}
+
+#champ-Icon {
+  align-items: center;
   margin: 5px;
   max-height: 50px;
   width: auto;
-  border-radius: 10px;
+  border-radius: 100%;
 }
 
-#text{
+#text {
   font-size: 2em;
   color: rgb(95, 5, 95);
 }
 
-blockquote{
+blockquote {
   font-size: 1.4em;
-  width:60%;
-  margin:50px auto;
-  font-family:Open Sans;
-  font-style:italic;
+  width: 60%;
+  margin: 50px auto;
+  font-family: Open Sans;
+  font-style: italic;
   color: #555555;
-  padding:1.2em 30px 1.2em 75px;
-  border-left:8px solid #78C0A8 ;
-  line-height:1.6;
+  padding: 1.2em 30px 1.2em 75px;
+  border-left: 8px solid darkred;
+  line-height: 1.6;
   position: relative;
-  background:#EDEDED;
+  background: #ededed;
 }
 
-blockquote::before{
-  font-family:Arial;
+blockquote::before {
+  font-family: Arial;
   content: "\201C";
-  color:#78C0A8;
-  font-size:4em;
+  color: darkred;
+  font-size: 4em;
   position: absolute;
   left: 10px;
-  top:-10px;
+  top: -10px;
 }
 
-blockquote::after{
-  content: '';
+blockquote::after {
+  content: "";
 }
 
-blockquote span{
+blockquote span {
   display: block;
   text-align: right;
   font-style: normal;
   font-weight: bold;
-  margin-top:0.1em;
+  margin-top: 0.1em;
 }
