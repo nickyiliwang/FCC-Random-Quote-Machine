@@ -1,31 +1,9 @@
-# FCC-Random-Quote-Machine
-Front End Libraries Projects - Build a Random Quote Machine
+# Random-Quote-Machine
+Front End Libraries Projects - Random Quote Machine
 
-Example: https://codepen.io/freeCodeCamp/full/qRZeGZ
+DEMO: https://codepen.io/nickyiliwang/pen/YMboaN?editors=0010
 
-User Stories
-
-User Story #1: I can see a wrapper element with a corresponding id="quote-box".
-
-User Story #2: Within #quote-box, I can see an element with a corresponding id="text".
-
-User Story #3: Within #quote-box, I can see an element with a corresponding id="author".
-
-User Story #4: Within #quote-box, I can see a clickable element with a corresponding id="new-quote".
-
-User Story #5: Within #quote-box, I can see a clickable element with a corresponding id="tweet-quote".
-
-User Story #6: On first load, my quote machine displays a random quote in the element with id="text".
-
-User Story #7: On first load, my quote machine displays the random quote's author in the element with id="author".
-
-User Story #8: When the #new-quote button is clicked, my quote machine should fetch a new quote and display it in the #text element.
-
-User Story #9: My quote machine should fetch the new quote's author when the #new-quote button is clicked and display it in the #author element.
-
-User Story #10: I can tweet the current quote by clicking on the #tweet-quote a element. This a element should include the "twitter.com/intent/tweet" path in it's href attribute to tweet the current quote.
-
-User Story #11: The #quote-box wrapper element should be horizontally centered. Please run tests with browser's zoom level at 100% and page maximized.
-
-Tester CDN
-https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js
+This project simply randomly generates different quotes from characters from a popular MOBA game called League of legends
+The layout includes clickable button to randomly generate another quote from a different character.
+Each quote has their own accompanying voices which plays upon clicking the quote.
+There's also an option to share Via Twitter.
